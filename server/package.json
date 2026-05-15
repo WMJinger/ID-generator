@@ -1,0 +1,16 @@
+{
+  "name": "id-generator-server",
+  "version": "1.0.0",
+  "description": "ID Generator Analytics Server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  }
+}

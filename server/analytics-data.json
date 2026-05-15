@@ -1,0 +1,408 @@
+{
+  "pageViews": [
+    {
+      "id": 1778592302677,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:02.677Z"
+    },
+    {
+      "id": 1778592304785,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:04.785Z"
+    },
+    {
+      "id": 1778592305379,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:05.379Z"
+    },
+    {
+      "id": 1778592306179,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:06.179Z"
+    },
+    {
+      "id": 1778592314842,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:14.842Z"
+    },
+    {
+      "id": 1778592315687,
+      "pageName": "phoneNumberGenerator",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:15.687Z"
+    },
+    {
+      "id": 1778592330083,
+      "pageName": "bankCardGenerator",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:30.083Z"
+    },
+    {
+      "id": 1778592344158,
+      "pageName": "socialCreditCodeGenerator",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:44.158Z"
+    },
+    {
+      "id": 1778592385107,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:26:25.107Z"
+    },
+    {
+      "id": 1778592402820,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:26:42.820Z"
+    },
+    {
+      "id": 1778592404103,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:26:44.103Z"
+    },
+    {
+      "id": 1778592419893,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:26:59.893Z"
+    },
+    {
+      "id": 1778592420225,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:27:00.225Z"
+    },
+    {
+      "id": 1778592421495,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:27:01.495Z"
+    },
+    {
+      "id": 1778592422175,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:27:02.175Z"
+    },
+    {
+      "id": 1778592429278,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:27:09.278Z"
+    },
+    {
+      "id": 1778592491317,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:28:11.317Z"
+    },
+    {
+      "id": 1778592494361,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:28:14.361Z"
+    },
+    {
+      "id": 1778592499719,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:28:19.719Z"
+    },
+    {
+      "id": 1778592500382,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:28:20.382Z"
+    },
+    {
+      "id": 1778592557804,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:29:17.804Z"
+    },
+    {
+      "id": 1778592791511,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/admin",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:33:11.511Z"
+    },
+    {
+      "id": 1778592791528,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:33:11.528Z"
+    },
+    {
+      "id": 1778592841414,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:34:01.414Z"
+    },
+    {
+      "id": 1778592849457,
+      "pageName": "about",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:34:09.457Z"
+    },
+    {
+      "id": 1778592853058,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/admin",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:34:13.058Z"
+    },
+    {
+      "id": 1778592854288,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/admin",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:34:14.288Z"
+    },
+    {
+      "id": 1778592854802,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/admin",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:34:14.802Z"
+    },
+    {
+      "id": 1778592855391,
+      "pageName": "admin",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/admin",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:34:15.391Z"
+    },
+    {
+      "id": 1778831076672,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:44:36.672Z"
+    },
+    {
+      "id": 1778831088706,
+      "pageName": "idCardGenerator",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:44:48.706Z"
+    },
+    {
+      "id": 1778831092278,
+      "pageName": "tools",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/id-card-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:44:52.278Z"
+    },
+    {
+      "id": 1778831093995,
+      "pageName": "phoneNumberGenerator",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/id-card-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:44:53.995Z"
+    },
+    {
+      "id": 1778831095551,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:44:55.551Z"
+    },
+    {
+      "id": 1778831096759,
+      "pageName": "bankCardGenerator",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:44:56.759Z"
+    },
+    {
+      "id": 1778831098119,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/bank-card-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:44:58.119Z"
+    },
+    {
+      "id": 1778831098958,
+      "pageName": "socialCreditCodeGenerator",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/bank-card-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:44:58.958Z"
+    },
+    {
+      "id": 1778831100418,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:45:00.418Z"
+    },
+    {
+      "id": 1778831102462,
+      "pageName": "idCardGenerator",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/social-credit-code-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:45:02.462Z"
+    },
+    {
+      "id": 1778831105782,
+      "pageName": "home",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/id-card-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-15T07:45:05.782Z"
+    }
+  ],
+  "clickEvents": [],
+  "toolUses": [
+    {
+      "id": 1778592312510,
+      "toolName": "phoneNumber",
+      "actionType": "generate",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:12.510Z"
+    },
+    {
+      "id": 1778592313499,
+      "toolName": "phoneNumber",
+      "actionType": "generate",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:13.499Z"
+    },
+    {
+      "id": 1778592316491,
+      "toolName": "phoneNumber",
+      "actionType": "generate",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:16.491Z"
+    },
+    {
+      "id": 1778592331500,
+      "toolName": "bankCard",
+      "actionType": "generate",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:31.500Z"
+    },
+    {
+      "id": 1778592341556,
+      "toolName": "bankCard",
+      "actionType": "validate",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:41.556Z"
+    },
+    {
+      "id": 1778592345467,
+      "toolName": "socialCreditCode",
+      "actionType": "generate",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:45.467Z"
+    },
+    {
+      "id": 1778592346178,
+      "toolName": "socialCreditCode",
+      "actionType": "generate",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:46.178Z"
+    },
+    {
+      "id": 1778592346717,
+      "toolName": "socialCreditCode",
+      "actionType": "generate",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:46.717Z"
+    },
+    {
+      "id": 1778592347274,
+      "toolName": "socialCreditCode",
+      "actionType": "generate",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36",
+      "referrer": "http://localhost:5173/tools/phone-number-generator",
+      "ip": "::1",
+      "createdAt": "2026-05-12T13:25:47.274Z"
+    }
+  ]
+}
