@@ -2,12 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "domains": [
-    {
-      "domain": "randomid.cc",
-      "redirect": null
-    }
-  ],
   "functions": {
     "api/**/*.js": {
       "runtime": "@vercel/node@3.0.0"
