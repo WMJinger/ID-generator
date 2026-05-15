@@ -7,9 +7,9 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "node build.js",
-    "preview": "vite preview --port 5173"
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "preview": "npx vite preview --port 5173"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
