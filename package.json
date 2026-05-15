@@ -3,6 +3,9 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "npx vite",
     "build": "npx vite build",
@@ -11,17 +14,17 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "@vercel/node": "^3.0.0",
+    "@vitejs/plugin-vue": "^5.0.0",
     "axios": "^1.6.8",
     "element-plus": "^2.5.0",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.25",
-    "@vitejs/plugin-vue": "^5.0.0",
     "typescript": "^5.3.3",
     "vite": "^5.1.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
     "vue-tsc": "^1.8.27",
     "sass": "^1.71.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.25"
   }
 }
