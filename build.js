@@ -1,13 +1,23 @@
-import { build } from 'vite';
+﻿import { build } from 'vite';
+import vue from '@vitejs/plugin-vue';
 import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { dirname, resolve } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 async function main() {
   try {
     await build({
-      configFile: join(__dirname, 'vite.config.ts'),
+      plugins: [vue()],
+      resolve: {
+        alias: {
+          '@': resolve(__dirname, 'src')
+        }
+      },
+      build: {
+        outDir: 'dist',
+        emptyOutDir: true
+      }
     });
     console.log('Build completed successfully');
   } catch (error) {
