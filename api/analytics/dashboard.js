@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
-import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs';
+import { promises as fs } from 'fs';
+import { existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
 const DATA_DIR = join(process.cwd(), '.vercel', 'analytics');
@@ -15,13 +15,15 @@ function initData() {
       clickEvents: [],
       toolUses: []
     };
-    writeFileSync(DATA_FILE, JSON.stringify(initialData, null, 2));
+    require('fs').writeFileSync(DATA_FILE, JSON.stringify(initialData, null, 2));
   }
 }
 
-function readData() {
+async function readData() {
+  initData();
   try {
-    return JSON.parse(readFileSync(DATA_FILE, 'utf-8'));
+    const data = await fs.readFile(DATA_FILE, 'utf-8');
+    return JSON.parse(data);
   } catch {
     return { pageViews: [], clickEvents: [], toolUses: [] };
   }
@@ -58,20 +60,21 @@ function filterByDate(items, startDate, endDate) {
   });
 }
 
-export async function GET(request) {
-  initData();
-  
+export default async function handler(req, res) {
+  if (req.method !== 'GET') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
   try {
-    const { searchParams } = new URL(request.url);
-    const data = readData();
+    const data = await readData();
     
     let startDate, endDate;
     
-    if (searchParams.get('startDate') && searchParams.get('endDate')) {
-      startDate = searchParams.get('startDate');
-      endDate = searchParams.get('endDate');
-    } else if (searchParams.get('range')) {
-      const range = getDateRange(searchParams.get('range'));
+    if (req.query.startDate && req.query.endDate) {
+      startDate = req.query.startDate;
+      endDate = req.query.endDate;
+    } else if (req.query.range) {
+      const range = getDateRange(req.query.range);
       startDate = range.start;
       endDate = range.end;
     } else {
@@ -129,7 +132,7 @@ export async function GET(request) {
       .map(([date, count]) => ({ date, count }))
       .sort((a, b) => a.date.localeCompare(b.date));
     
-    return NextResponse.json({
+    res.status(200).json({
       pageViews,
       clickEvents,
       toolUses,
@@ -141,6 +144,6 @@ export async function GET(request) {
     });
   } catch (error) {
     console.error('Error fetching dashboard:', error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    res.status(500).json({ error: error.message });
   }
 }

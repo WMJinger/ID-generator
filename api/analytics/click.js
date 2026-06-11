@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
-import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs';
+import { promises as fs } from 'fs';
+import { existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
 const DATA_DIR = join(process.cwd(), '.vercel', 'analytics');
@@ -15,34 +15,37 @@ function initData() {
       clickEvents: [],
       toolUses: []
     };
-    writeFileSync(DATA_FILE, JSON.stringify(initialData, null, 2));
+    require('fs').writeFileSync(DATA_FILE, JSON.stringify(initialData, null, 2));
   }
 }
 
-function readData() {
+async function readData() {
+  initData();
   try {
-    return JSON.parse(readFileSync(DATA_FILE, 'utf-8'));
+    const data = await fs.readFile(DATA_FILE, 'utf-8');
+    return JSON.parse(data);
   } catch {
     return { pageViews: [], clickEvents: [], toolUses: [] };
   }
 }
 
-function writeData(data) {
+async function writeData(data) {
   initData();
-  writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
+  await fs.writeFile(DATA_FILE, JSON.stringify(data, null, 2));
 }
 
 function getCurrentDateTime() {
   return new Date().toISOString();
 }
 
-export async function POST(request) {
-  initData();
-  
+export default async function handler(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
   try {
-    const body = await request.json();
-    
-    const data = readData();
+    const body = req.body || {};
+    const data = await readData();
     const newClick = {
       id: Date.now(),
       eventName: body.eventName,
@@ -54,12 +57,11 @@ export async function POST(request) {
       createdAt: getCurrentDateTime()
     };
     data.clickEvents.push(newClick);
-    writeData(data);
-    
-    console.log('Click tracked:', body.eventName);
-    return NextResponse.json({ success: true, id: newClick.id });
+    await writeData(data);
+
+    res.status(200).json({ success: true, id: newClick.id });
   } catch (error) {
     console.error('Error tracking click:', error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    res.status(500).json({ error: error.message });
   }
 }
