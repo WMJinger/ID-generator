@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "npx vite",
-    "build": "node build.js",
+    "build": "npx vite build",
     "preview": "npx vite preview --port 5173"
   },
   "dependencies": {
