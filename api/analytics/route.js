@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { writeFile, readFile, existsSync, mkdirSync } from 'fs';
+import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
 const DATA_DIR = join(process.cwd(), '.vercel', 'analytics');
@@ -15,9 +15,7 @@ function initData() {
       clickEvents: [],
       toolUses: []
     };
-    writeFile(DATA_FILE, JSON.stringify(initialData, null, 2), (err) => {
-      if (err) console.error('Error creating data file:', err);
-    });
+    writeFileSync(DATA_FILE, JSON.stringify(initialData, null, 2));
   }
 }
 
@@ -31,9 +29,7 @@ function readData() {
 
 function writeData(data) {
   initData();
-  writeFile(DATA_FILE, JSON.stringify(data, null, 2), (err) => {
-    if (err) console.error('Error writing data:', err);
-  });
+  writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
 }
 
 function getCurrentDateTime() {
