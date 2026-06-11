@@ -27,15 +27,6 @@ function readData() {
   }
 }
 
-function writeData(data) {
-  initData();
-  writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
-}
-
-function getCurrentDateTime() {
-  return new Date().toISOString();
-}
-
 function getDateRange(range) {
   const now = new Date();
   let startDate = new Date();
@@ -150,67 +141,6 @@ export async function GET(request) {
     });
   } catch (error) {
     console.error('Error fetching dashboard:', error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
-  }
-}
-
-export async function POST(request) {
-  initData();
-  
-  const { pathname } = new URL(request.url);
-  
-  try {
-    const body = await request.json();
-    
-    if (pathname.includes('/page-view')) {
-      const data = readData();
-      const newPageView = {
-        id: Date.now(),
-        pageName: body.pageName,
-        userAgent: body.userAgent,
-        referrer: body.referrer,
-        createdAt: getCurrentDateTime()
-      };
-      data.pageViews.push(newPageView);
-      writeData(data);
-      return NextResponse.json({ success: true, id: newPageView.id });
-    }
-    
-    if (pathname.includes('/click')) {
-      const data = readData();
-      const newClick = {
-        id: Date.now(),
-        eventName: body.eventName,
-        elementId: body.elementId,
-        elementClass: body.elementClass,
-        pageName: body.pageName,
-        userAgent: body.userAgent,
-        referrer: body.referrer,
-        createdAt: getCurrentDateTime()
-      };
-      data.clickEvents.push(newClick);
-      writeData(data);
-      return NextResponse.json({ success: true, id: newClick.id });
-    }
-    
-    if (pathname.includes('/tool-use')) {
-      const data = readData();
-      const newToolUse = {
-        id: Date.now(),
-        toolName: body.toolName,
-        actionType: body.actionType,
-        userAgent: body.userAgent,
-        referrer: body.referrer,
-        createdAt: getCurrentDateTime()
-      };
-      data.toolUses.push(newToolUse);
-      writeData(data);
-      return NextResponse.json({ success: true, id: newToolUse.id });
-    }
-    
-    return NextResponse.json({ error: 'Unknown endpoint' }, { status: 404 });
-  } catch (error) {
-    console.error('Error tracking event:', error);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
