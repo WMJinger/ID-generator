@@ -1,65 +1,17 @@
-import { promises as fs } from 'fs';
-import { existsSync, mkdirSync } from 'fs';
-import { join } from 'path';
-
-const DATA_DIR = join('/tmp', 'analytics');
-const DATA_FILE = join(DATA_DIR, 'analytics-data.json');
-
-function initData() {
-  if (!existsSync(DATA_DIR)) {
-    mkdirSync(DATA_DIR, { recursive: true });
-  }
-  if (!existsSync(DATA_FILE)) {
-    const initialData = {
-      pageViews: [],
-      clickEvents: [],
-      toolUses: []
-    };
-    require('fs').writeFileSync(DATA_FILE, JSON.stringify(initialData, null, 2));
-  }
-}
-
-async function readData() {
-  initData();
-  try {
-    const data = await fs.readFile(DATA_FILE, 'utf-8');
-    return JSON.parse(data);
-  } catch {
-    return { pageViews: [], clickEvents: [], toolUses: [] };
-  }
-}
-
-async function writeData(data) {
-  initData();
-  await fs.writeFile(DATA_FILE, JSON.stringify(data, null, 2));
-}
-
-function getCurrentDateTime() {
-  return new Date().toISOString();
-}
-
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  try {
-    const body = req.body || {};
-    const data = await readData();
-    const newToolUse = {
-      id: Date.now(),
-      toolName: body.toolName,
-      actionType: body.actionType,
-      userAgent: body.userAgent,
-      referrer: body.referrer,
-      createdAt: getCurrentDateTime()
-    };
-    data.toolUses.push(newToolUse);
-    await writeData(data);
+  const body = req.body || {};
+  const newToolUse = {
+    id: Date.now(),
+    toolName: body.toolName,
+    actionType: body.actionType,
+    userAgent: body.userAgent,
+    referrer: body.referrer,
+    createdAt: new Date().toISOString()
+  };
 
-    res.status(200).json({ success: true, id: newToolUse.id });
-  } catch (error) {
-    console.error('Error tracking tool use:', error);
-    res.status(500).json({ error: error.message });
-  }
+  res.status(200).json({ success: true, id: newToolUse.id });
 }
