@@ -2,7 +2,7 @@ import { promises as fs } from 'fs';
 import { existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
-const DATA_DIR = join(process.cwd(), '.vercel', 'analytics');
+const DATA_DIR = join('/tmp', 'analytics');
 const DATA_FILE = join(DATA_DIR, 'analytics-data.json');
 
 function initData() {
